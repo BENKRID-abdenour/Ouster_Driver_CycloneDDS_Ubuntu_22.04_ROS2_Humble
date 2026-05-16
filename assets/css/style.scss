@@ -70,7 +70,6 @@
    Blocs de code — thème "One Dark" lisible
    ============================================================ */
 
-/* Bloc de code multiligne — fond gris bleuté profond */
 .main-content pre {
   background-color: #282c34;
   border: 1px solid #3e4451;
@@ -88,7 +87,6 @@
   line-height: 1.5;
 }
 
-/* Code inline — fond clair, texte bleu lisible */
 .main-content code {
   background-color: #edf2f7;
   color: #2c5282;
@@ -98,11 +96,9 @@
 }
 
 /* ============================================================
-   Coloration syntaxique (Rouge / Jekyll highlighter)
-   Inspirée du thème "One Dark Pro" — lisible sur fond sombre
+   Coloration syntaxique (One Dark Pro)
    ============================================================ */
 
-/* Commentaires — gris discret */
 .highlight .c,
 .highlight .c1,
 .highlight .cm,
@@ -110,7 +106,6 @@
 .highlight .cs,
 .highlight .cd { color: #5c6370; font-style: italic; }
 
-/* Mots-clés et types — violet/magenta */
 .highlight .k,
 .highlight .kc,
 .highlight .kd,
@@ -119,7 +114,6 @@
 .highlight .kr,
 .highlight .kt { color: #c678dd; }
 
-/* Strings — vert tendre */
 .highlight .s,
 .highlight .s1,
 .highlight .s2,
@@ -133,7 +127,6 @@
 .highlight .sr,
 .highlight .ss { color: #98c379; }
 
-/* Nombres — orange clair */
 .highlight .m,
 .highlight .mf,
 .highlight .mh,
@@ -141,33 +134,25 @@
 .highlight .mo,
 .highlight .il { color: #d19a66; }
 
-/* Tags XML/HTML — rouge corail (critique pour la lisibilité) */
 .highlight .nt { color: #e06c75; }
 
-/* Attributs XML/HTML — jaune doré */
 .highlight .na { color: #d19a66; }
 
-/* Noms de fonctions, classes — bleu clair */
 .highlight .nf,
 .highlight .nc { color: #61afef; }
 
-/* Variables, identifiants */
 .highlight .n,
 .highlight .nv,
 .highlight .no { color: #e06c75; }
 
-/* Built-ins Bash (sudo, apt, echo...) — bleu clair */
 .highlight .nb { color: #61afef; }
 
-/* Opérateurs et ponctuation — gris clair */
 .highlight .o,
 .highlight .ow,
 .highlight .p { color: #abb2bf; }
 
-/* Erreurs */
 .highlight .err { color: #e06c75; background-color: transparent; }
 
-/* Force le fond sombre sur tous les conteneurs highlight */
 .highlight,
 .highlight pre,
 figure.highlight {
@@ -188,4 +173,15 @@ figure.highlight {
   background-color: #f7fafc;
 }
 
-/* =========
+/* ============================================================
+   Blockquotes (encadrés ⚠️ et 💡) — accent bleu
+   ============================================================ */
+
+.main-content blockquote {
+  border-left: 4px solid #2c5282;
+  background-color: #ebf4fb;
+  color: #2d3748;
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
