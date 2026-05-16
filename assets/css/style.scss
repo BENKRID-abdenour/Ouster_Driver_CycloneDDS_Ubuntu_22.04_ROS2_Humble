@@ -4,6 +4,69 @@
 @import "{{ site.theme }}";
 
 /* ============================================================
+   Bleu nordique élégant — HADRON Lab style
+   ============================================================ */
+
+/* Header avec dégradé bleu nordique profond */
+.page-header {
+  background-color: #1e3a5f;
+  background-image: linear-gradient(120deg, #0f2942 0%, #1e3a5f 50%, #2c5282 100%);
+}
+
+/* Titre principal — typographie plus marquée */
+.project-name {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Sous-titre — un peu plus de finesse */
+.project-tagline {
+  opacity: 0.92;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* Boutons "View on GitHub" / "Download" — style cohérent */
+.btn {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+/* Liens dans le contenu — bleu cohérent avec le header */
+.main-content a {
+  color: #2c5282;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 82, 130, 0.3);
+  transition: all 0.15s ease;
+}
+
+.main-content a:hover {
+  color: #1e3a5f;
+  border-bottom-color: #1e3a5f;
+}
+
+/* Titres des sections — bleu profond */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #1e3a5f;
+}
+
+/* Bordure colorée sur H2 — touche élégante */
+.main-content h2 {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.4em;
+}
+
+/* ============================================================
    Blocs de code — thème "One Dark" lisible
    ============================================================ */
 
@@ -78,40 +141,51 @@
 .highlight .mo,
 .highlight .il { color: #d19a66; }
 
-/* Noms de fonctions, classes — bleu clair */
-.highlight .nf,
-.highlight .nc,
-.highlight .na { color: #61afef; }
-
-/* Variables, identifiants — texte clair par défaut */
-.highlight .n,
-.highlight .nv,
-.highlight .nb,
-.highlight .no { color: #e06c75; }
-
-/* Tags XML/HTML — rouge corail (très important pour ton cas !) */
+/* Tags XML/HTML — rouge corail (critique pour la lisibilité) */
 .highlight .nt { color: #e06c75; }
 
 /* Attributs XML/HTML — jaune doré */
 .highlight .na { color: #d19a66; }
+
+/* Noms de fonctions, classes — bleu clair */
+.highlight .nf,
+.highlight .nc { color: #61afef; }
+
+/* Variables, identifiants */
+.highlight .n,
+.highlight .nv,
+.highlight .no { color: #e06c75; }
+
+/* Built-ins Bash (sudo, apt, echo...) — bleu clair */
+.highlight .nb { color: #61afef; }
 
 /* Opérateurs et ponctuation — gris clair */
 .highlight .o,
 .highlight .ow,
 .highlight .p { color: #abb2bf; }
 
-/* Constantes booléennes — orange */
-.highlight .kc { color: #d19a66; }
-
-/* Erreurs / avertissements */
+/* Erreurs */
 .highlight .err { color: #e06c75; background-color: transparent; }
 
-/* Texte par défaut pour le shell bash */
-.highlight .nb { color: #61afef; }
-
-/* Highlight container background reset (au cas où Rouge force un fond) */
+/* Force le fond sombre sur tous les conteneurs highlight */
 .highlight,
 .highlight pre,
 figure.highlight {
   background-color: #282c34 !important;
 }
+
+/* ============================================================
+   Tables — design plus pro
+   ============================================================ */
+
+.main-content table th {
+  background-color: #f7fafc;
+  border-bottom: 2px solid #2c5282;
+  color: #1e3a5f;
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+/* =========
